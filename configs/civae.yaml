@@ -1,0 +1,67 @@
+# dataset
+nps: 1000
+ns: 40
+dl: 5
+dd: 5
+nl: 3
+s: 1
+p: 'gauss'
+act: 'xtanh_0.1'
+uncentered: false
+noisy: false
+staircase: false
+nf_ivae: false
+data_postfix: 'nl'
+
+# Data Encoder
+data_enc_output_dim: 4
+data_enc_hidden_dim: [6]
+data_enc_activation: ['xtanh_0.1', 'none']
+data_enc_initialize: true
+
+# Environment Encoder
+env_enc_output_dim: 4
+env_enc_hidden_dim: [6]
+env_enc_activation: ['xtanh_0.1', 'none']
+env_enc_initialize: true
+
+# Linear Prior's Environment Encoder Network
+env_encoder_linear_prior_hidden_dim: []
+env_encoder_linear_prior_activation: ['none']
+env_encoder_linear_prior_initialize: true
+
+# Non-Linear Prior's Environment Encoder Network
+env_encoder_non_linear_prior_hidden_dim: []
+env_encoder_non_linear_prior_activation: ['none']
+env_encoder_non_linear_prior_initialize: true
+
+# Graph Weights Network
+graph_weights_hidden_dim: []
+graph_weights_activation: ['none']
+graph_weights_initialize: true
+
+# Mutual Effects
+mutual_effects_hidden_dim: [8, 8, 8, 8]
+mutual_effects_activation: ['relu', 'relu', 'relu', 'relu', 'none']
+mutual_effects_initialize: true
+
+# CIVAE Model
+civae_hidden_dim: [8, 8]
+civae_activation: ['relu', 'relu', 'none']
+civae_initialize: true
+
+# learning
+a: 100
+b: 10
+c: 1
+d: 1
+score_matching_coef: 10
+dag_coef: 0.1
+gamma: 0
+lr: 0.02
+batch_size: 128
+epochs: 200
+no_scheduler: false
+scheduler_tol: 3
+anneal: false
+anneal_epoch: 20

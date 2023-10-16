@@ -1,0 +1,58 @@
+# dataset
+nps: 1000
+ns: 40
+dl: 5
+dd: 5
+nl: 3
+s: 1
+p: 'gauss'
+act: 'xtanh_0.3'
+uncentered: false
+noisy: false
+staircase: false
+nf_ivae: false
+data_postfix: ''
+
+# Encoder
+enc_hidden_dims: [6]
+enc_hidden_activations: ['relu']
+enc_mu_activation: 'none'
+enc_logv_activation: 'none'
+enc_initialize: true
+
+# λ_f 
+lambda_f_hidden_dims: [6]
+lambda_f_activations: ['relu', 'none']
+lambda_f_initialize: true
+
+# λ_NN
+lambda_nn_hidden_dims: [6]
+lambda_nn_activations: ['relu', 'none']
+lambda_nn_initialize: true
+
+# T_NN
+t_nn_hidden_dims: [6]
+t_nn_activations: ['relu', 'none']
+t_nn_initialize: true
+
+# Decoder
+decoder_hidden_dims: [6]
+decoder_activations: ['relu', 'none']
+decoder_initialize: true
+
+# learning
+a: 10   # Likelihood
+b: 1          # 
+c: 1
+d: 1000
+score_matching_coef: 1
+dag_coef: 0.1
+gamma: 0
+elbo_lr: 0.005
+score_matching_lr: 0.005
+batch_size: 64
+epochs: 200
+no_scheduler: true
+scheduler_tol: 3
+anneal: false
+anneal_epoch: 20

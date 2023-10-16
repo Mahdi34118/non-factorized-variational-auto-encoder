@@ -1,0 +1,63 @@
+# dataset
+nps: 1000
+ns: 40
+dl: 5
+dd: 5
+nl: 3
+s: 1
+p: 'gauss'
+act: 'xtanh'
+uncentered: false
+noisy: false
+staircase: false
+
+# Data Encoder
+data_enc_output_dim: 6
+data_enc_n_layers: 3
+data_enc_hidden_dim: 10
+data_enc_activation: 'xtanh'
+data_enc_slope: 0.1
+data_enc_initialize: true
+
+# Environment Encoder
+env_enc_output_dim: 10
+env_enc_n_layers: 3
+env_enc_hidden_dim: 10
+env_enc_activation: 'xtanh'
+env_enc_slope: 0.1
+env_enc_initialize: true
+
+# Graph Weights Network
+graph_weights_n_layers: 3
+graph_weights_hidden_dim: 10
+graph_weights_activation: 'xtanh'
+graph_weights_slope: 0.1
+graph_weights_initialize: true
+
+# Mutual Effects
+mutual_effects_n_layers: 3
+mutual_effects_hidden_dim: 10
+mutual_effects_activation: 'lrelu'
+mutual_effects_slope: 0.1
+mutual_effects_initialize: true
+
+# CIVAE Model
+civae_n_layers: 3
+civae_hidden_dim: 10
+civae_activation: 'xtanh'
+civae_slope: 0.1
+civae_initialize: true
+
+# learning
+a: 1
+b: 1
+c: 1
+d: 1
+gamma: 0
+lr: 0.005
+batch_size: 64
+epochs: 60
+no_scheduler: false
+scheduler_tol: 3
+anneal: false
+anneal_epoch: 20
