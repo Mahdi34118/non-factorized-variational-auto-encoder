@@ -1,5 +1,5 @@
 # iVAE
-Code for [VAEs and nonlinear ICA: a unifying framework](https://arxiv.org/abs/1907.04809) 
+Code for NF-iVAE network in [INVARIANT CAUSAL REPRESENTATION LEARNING FOR OUT-OF-DISTRIBUTION GENERALIZATION](https://openreview.net/pdf?id=-e4EXDWXnSn)
 
-The `configs` folder contains example configurations used in training. Very similar configurations were used for the figures 
-of the paper.
+ 
+This repository's backbone code is from the original implementation of [VAEs and nonlinear ICA: a unifying framework](https://arxiv.org/abs/1907.04809) 
