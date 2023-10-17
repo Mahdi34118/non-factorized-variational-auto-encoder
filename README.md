@@ -1,4 +1,4 @@
-# iVAE
+# NF-iVAE
 Code for NF-iVAE network in [INVARIANT CAUSAL REPRESENTATION LEARNING FOR OUT-OF-DISTRIBUTION GENERALIZATION](https://openreview.net/pdf?id=-e4EXDWXnSn)
 
  
